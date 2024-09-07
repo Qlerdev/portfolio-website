@@ -60,7 +60,6 @@ nav .nav-items-container .nav-items a {
 nav .nav-items-container .nav-items a:hover {
   color: #ffffff;
   background-color: #333333;
-  border-radius: 4px;
 }
 
 /*HERO SECTION*/
@@ -122,27 +121,61 @@ nav .nav-items-container .nav-items a:hover {
   align-items: center;
   width: 100%;
 }
-.aboutme-container .aboutme-img img {
-  width: 28.5rem;
-  height: 28.5rem;
-  border-radius: 2.5rem;
+.aboutme-container .aboutme-img {
   position: relative;
+  width: 32.5rem;
+  height: 32.5rem;
 }
-/* .aboutme-container .aboutme-img img::before {
-  position: absolute;
-  width: 28.5rem;
-  height: 28.5rem;
+
+.aboutme-container .aboutme-img .image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutme-container .aboutme-img .image-wrapper::before {
   content: "";
-  border: solid 5px #eab308;
-  left: 10rem;
-  top: 10rem;
-} */
+  position: absolute;
+  top: 3rem;
+  left: -3rem;
+  width: 100%;
+  height: 100%;
+  border: solid 1.5rem #eab308;
+  border-radius: 2.5rem;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.aboutme-container .aboutme-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2.5rem;
+  display: block;
+  z-index: 50;
+}
+
 .aboutme-container .aboutme-desc h2 {
   color: #eeee;
+  padding-bottom: 1rem;
 }
 .aboutme-container .aboutme-desc span {
   color: #eab308;
 }
 .aboutme-container .aboutme-desc p {
   color: white;
+  padding-bottom: 5rem;
+}
+
+.aboutme .btn-contact {
+  padding: 1rem 1.5rem;
+  background-color: #eab308;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s , color 0.3s;
+}
+
+.aboutme .btn-contact:hover {
+  transform: translateY(-1rem);
+  color: #000000;
 }

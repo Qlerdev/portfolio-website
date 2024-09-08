@@ -16,10 +16,10 @@
           <h2>My<span>Portfolio</span></h2>
         </div>
         <ul class="nav-items-container">
-          <li class="nav-items"><a href="#">HOME</a></li>
-          <li class="nav-items"><a href="#">ABOUT</a></li>
-          <li class="nav-items"><a href="#">SERVICE</a></li>
-          <li class="nav-items"><a href="#">PROJECTS</a></li>
+          <li class="nav-items"><a href="#herosection">HOME</a></li>
+          <li class="nav-items"><a href="#aboutme">ABOUT</a></li>
+          <li class="nav-items"><a href="#myservice">SERVICE</a></li>
+          <li class="nav-items"><a href="#portfolio">PROJECTS</a></li>
           <li class="nav-items"><a href="#">RESUME</a></li>
           <li class="nav-items"><a href="#">BLOG</a></li>
           <li class="nav-items"><a href="#">CONTACT</a></li>
@@ -27,7 +27,7 @@
       </nav>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="herosection">
         <div class="hero-content">
           <div class="left-hero">
             <h2>Hello , Welcome</h2>
@@ -43,7 +43,7 @@
           </div>
         </div>
       </section>
-      <section class="aboutme">
+      <section class="aboutme" id="aboutme">
         <div class="container aboutme-container">
           <div class="aboutme-img">
             <div class="image-wrapper">
@@ -53,10 +53,63 @@
           <div class="aboutme-desc">
             <h2>About <span>Me!</span></h2>
             <p>
-              Hello there! My name is Punnakan Punsiri. I'm 21 years old. <br />Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit. Pariatur repellat voluptate <br>molestiae sapiente odio id
-              sed adipisci. <br />voluptatem mollitia! Quasi aspernatur enim <br>quam libero optio quo ipsa eos. <br>Voluptatibus inventore
+              Hello there! My name is Punnakan Punsiri. I'm 21 years old. <br />Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit. Pariatur repellat voluptate <br />molestiae sapiente
+              odio id sed adipisci. <br />voluptatem mollitia! Quasi aspernatur enim <br />quam libero optio quo ipsa eos. <br />Voluptatibus inventore
             </p>
             <button id="contact" class="btn-contact">Contact Me</button>
+          </div>
+        </div>
+      </section>
+      <section class="myservice" id="myservice">
+        <div class="container myservice-container">
+          <div class="myservice-h">
+            <h2>My services</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Maxime deleniti cumque quod perspiciatis error illum reprehenderit distinctio. <br />Deleniti quis nihil facere, aspernatur
+            </p>
+          </div>
+          <div class="myservices">
+            <div class="card">
+              <img src="./assets/annoucement.png" alt="digital" class="logo-services" />
+              <h3>
+                Digital <br />
+                Marketing
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Quidem, error libero qui assumenda sint eaque <br />dolores incidunt consequatur necessitatibus id,</p>
+            </div>
+            <div class="card">
+              <img src="./assets/coding.png" alt="web" class="logo-services" />
+              <h3>
+                Web <br />
+                development
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Quidem, error libero qui assumenda sint eaque <br />dolores incidunt consequatur necessitatibus id,</p>
+            </div>
+            <div class="card">
+              <img src="./assets/design-thinking.png" alt="creative" class="logo-services" />
+              <h3>
+                Creative <br />
+                Graphic Design
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Quidem, error libero qui assumenda sint eaque <br />dolores incidunt consequatur necessitatibus id,</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="container portfolio-container">
+          <div class="port-header">
+            <h2>My <span>Projects</span></h2>
+          </div>
+          <div class="projects">
+            <div class="box calculator" id="calculator">
+              <img src="./assets/6437.jpg" alt="calculator" />
+              <p>This is a calculator made by myself using pure css and javascript only</p>
+            </div>
+            <div class="box todolist" id="todolist">
+              <img src="./assets/todolist.jpg" alt="todolist" />
+              <p>This is a todolist made by myself using pure css and javascript only</p>
+            </div>
           </div>
         </div>
       </section>

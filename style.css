@@ -12,6 +12,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -25,7 +26,7 @@ html {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #020617;
+  background-color: var(--background-2);
   width: 100%;
   height: 6rem;
   padding: 2rem 10rem;
@@ -177,17 +178,129 @@ nav .nav-items-container .nav-items a:hover {
 }
 
 .aboutme .btn-contact:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-0.5rem);
   color: #000000;
 }
-.aboutme .container.aboutme-container .aboutme-desc{
-  padding: 0 0 0 12rem ;
+.aboutme .container.aboutme-container .aboutme-desc {
+  padding: 0 0 0 12rem;
 }
-.aboutme .container.aboutme-container .aboutme-desc h2{
+.aboutme .container.aboutme-container .aboutme-desc h2 {
   font-size: 4rem;
 }
 
-.aboutme .container.aboutme-container .aboutme-desc P{
+.aboutme .container.aboutme-container .aboutme-desc P {
   font-size: 1.5rem;
   color: #737883;
+}
+
+/*MY SERVICES SECTION*/
+
+.myservice {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-1);
+  display: flex;
+  align-items: center;
+}
+.myservice .myservices {
+  gap: 3rem;
+}
+
+.myservice .myservices .card {
+  background-color: rgb(255, 255, 255);
+  padding: 7rem 1rem;
+  border-radius: 1.2rem;
+}
+
+.myservice .container.myservice-container .myservice-h h2 {
+  color: #eab308;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.myservice .container.myservice-container .myservice-h p {
+  color: #66696e;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+}
+
+.myservice .container.myservice-container .myservices {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.myservice .container.myservice-container .myservices .card h3 {
+  font-size: 2rem;
+}
+
+.myservice .container.myservice-container .myservices .card p {
+  margin-top: 1rem;
+  color: #6f7279;
+}
+
+/*LOGOS*/
+
+.myservice .container.myservice-container .myservices .logo-services {
+  width: 8rem;
+  height: 8rem;
+}
+
+/*PORTFOLIO SECTION*/
+
+.portfolio {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-2);
+}
+
+.portfolio .container.portfolio-container .port-header h2 {
+  font-size: 4.5rem;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 10rem;
+}
+
+.portfolio .container.portfolio-container .port-header span {
+  color: #eab308;
+}
+.portfolio .container.portfolio-container .projects {
+  padding-top: 6rem;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.portfolio .container.portfolio-container .projects .box {
+  background-color: #151d32;
+  width: 27rem;
+  height: 27rem;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: box-shadow 0.3s, transform 0.2s, font-weight 0.1s,color 0.3s;
+  cursor: pointer;
+}
+
+.portfolio .container.portfolio-container .projects .box:hover {
+  box-shadow: 0.5rem 0.3rem #afafae;
+  transform: translateY(-1rem);
+  color: #eab308;
+}
+
+.portfolio .container.portfolio-container .projects img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 2.5rem;
+}
+.portfolio .container.portfolio-container .projects .box {
+  width: 20rem;
+}
+.portfolio .container.portfolio-container .projects p {
+  font-size: 1.5rem;
+  color: #ffffff;
 }

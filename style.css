@@ -15,7 +15,7 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -131,6 +131,7 @@ nav .nav-items-container .nav-items a:hover {
   position: relative;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .aboutme-container .aboutme-img .image-wrapper::before {
@@ -172,10 +173,21 @@ nav .nav-items-container .nav-items a:hover {
   border-radius: 1rem;
   color: white;
   cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s , color 0.3s;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .aboutme .btn-contact:hover {
   transform: translateY(-1rem);
   color: #000000;
+}
+.aboutme .container.aboutme-container .aboutme-desc{
+  padding: 0 0 0 12rem ;
+}
+.aboutme .container.aboutme-container .aboutme-desc h2{
+  font-size: 4rem;
+}
+
+.aboutme .container.aboutme-container .aboutme-desc P{
+  font-size: 1.5rem;
+  color: #737883;
 }

@@ -250,7 +250,7 @@ nav .nav-items-container .nav-items a:hover {
 
 .portfolio {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: var(--background-2);
 }
 
@@ -267,8 +267,7 @@ nav .nav-items-container .nav-items a:hover {
 .portfolio .container.portfolio-container .projects {
   padding-top: 6rem;
   display: grid;
-  flex-direction: row;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(5, auto);
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -277,19 +276,28 @@ nav .nav-items-container .nav-items a:hover {
 .portfolio .container.portfolio-container .projects .box {
   background-color: #151d32;
   width: 27rem;
-  height: 27rem;
+  height: auto;
   text-align: center;
   justify-content: center;
   padding: 2rem;
   border-radius: 2rem;
-  transition: box-shadow 0.3s, transform 0.2s, font-weight 0.1s,color 0.3s;
+  transition: box-shadow 0.3s, transform 0.2s, font-weight 0.1s;
   cursor: pointer;
 }
 
 .portfolio .container.portfolio-container .projects .box:hover {
-  box-shadow: 0.5rem 0.3rem #afafae;
+  box-shadow: 0.4rem 0.5rem #eab308;
   transform: translateY(-1rem);
-  color: #eab308;
+}
+
+.portfolio .container.portfolio-container .projects .box {
+  width: 20rem;
+}
+
+.portfolio .container.portfolio-container .projects h5 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  color: #eeee;
 }
 
 .portfolio .container.portfolio-container .projects img {
@@ -297,10 +305,10 @@ nav .nav-items-container .nav-items a:hover {
   height: 15rem;
   border-radius: 2.5rem;
 }
-.portfolio .container.portfolio-container .projects .box {
-  width: 20rem;
-}
+
 .portfolio .container.portfolio-container .projects p {
   font-size: 1.5rem;
   color: #ffffff;
+  padding: auto
+  ;
 }

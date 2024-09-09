@@ -14,15 +14,23 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
+body {
+  min-height: 200vh;
+}
 .container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/*NAVBAR SECTION*/
+header {
+  position: -webkit-sticky; /* สำหรับ Safari */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
+/*NAVBAR SECTION*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -252,6 +260,7 @@ nav .nav-items-container .nav-items a:hover {
   width: 100%;
   height: auto;
   background-color: var(--background-2);
+  padding-bottom: 10rem;
 }
 
 .portfolio .container.portfolio-container .port-header h2 {
@@ -271,6 +280,7 @@ nav .nav-items-container .nav-items a:hover {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  height: auto;
 }
 
 .portfolio .container.portfolio-container .projects .box {
@@ -281,7 +291,7 @@ nav .nav-items-container .nav-items a:hover {
   justify-content: center;
   padding: 2rem;
   border-radius: 2rem;
-  transition: box-shadow 0.3s, transform 0.2s, font-weight 0.1s;
+  transition: box-shadow 0.3s, transform 0.2s;
   cursor: pointer;
 }
 
@@ -309,6 +319,155 @@ nav .nav-items-container .nav-items a:hover {
 .portfolio .container.portfolio-container .projects p {
   font-size: 1.5rem;
   color: #ffffff;
-  padding: auto
-  ;
+  padding: auto;
+}
+
+/*CONTACT SECTION*/
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-1);
+}
+
+.contact .container.contact-container .contact-header {
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.contact .container.contact-container .contact-header h2 {
+  font-size: 4.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact .container.contact-container .contact-header span {
+  color: #eab308;
+}
+
+.contact .container.contact-container .contact-header p {
+  font-size: 2rem;
+  color: #ffffff;
+  padding-top: 0.8rem;
+}
+
+.container.contact-container .form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  align-items: flex-start;
+}
+
+.container.contact-container .form-container .left-contact {
+  font-size: 2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.container.contact-container .form-container .left-contact p {
+  padding-bottom: 2rem;
+}
+.container.contact-container .form-container .left-contact span {
+  color: #eab308;
+}
+
+/*RIGHT CONTACT*/
+.container.contact-container .form-container .right-contact {
+  width: 50%;
+}
+
+.container.contact-container .form-container .right-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container.contact-container .form-container .right-contact input {
+  padding: 1.2rem 1rem;
+  background-color: #1f2937;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container.contact-container .form-container .right-contact textarea {
+  background-color: #1f2937;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  padding: 2rem 1rem;
+  height: 30rem; 
+}
+
+.container.contact-container .form-container .right-contact button {
+  padding: 0.8rem 1rem;
+  background-color: #eab308;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.container.contact-container .form-container .right-contact button:hover {
+  background-color: #d4a308;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: var(--background-2);
+}
+footer .container.social-container .text-footer h2 {
+  padding-top: 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+footer .container.social-container .text-footer p {
+  color: #eeee;
+  text-align: center;
+}
+footer .container.social-container .social-logos .social-items {
+  display: flex;
+  justify-content: center;
+}
+
+footer .container.social-container .social-logos .social-items a .fa-brands {
+  margin: 3rem 2rem 0 0;
+  font-size: 4rem;
+  transition: color 0.3s;
+}
+
+footer .container.social-container .social-logos .social-items a .fa-brands:hover {
+  color: #d4a308;
+}
+
+
+/*RESPONSIVE*/
+
+/* มือถือ */
+@media (max-width: 480px) {
+  
+}
+
+/* แท็บเล็ต */
+@media (min-width: 481px) and (max-width: 1024px) {
+  
+}
+
+/* คอมพิวเตอร์โน้ตบุ๊ก */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+}
+
+/* คอมพิวเตอร์ตั้งโต๊ะ */
+@media (min-width: 1281px) {
+  
 }

@@ -6,11 +6,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="navbar">
       <nav>
         <div class="text-logo">
           <h2>My<span>Portfolio</span></h2>
@@ -20,9 +27,10 @@
           <li class="nav-items"><a href="#aboutme">ABOUT</a></li>
           <li class="nav-items"><a href="#myservice">SERVICES</a></li>
           <li class="nav-items"><a href="#portfolio">PROJECTS</a></li>
-          <li class="nav-items"><a href="#">RESUME</a></li>
-          <li class="nav-items"><a href="#">BLOG</a></li>
-          <li class="nav-items"><a href="#">CONTACT</a></li>
+          <!-- <li class="nav-items"><a href="#">RESUME</a></li> -->
+          <!-- <li class="nav-items"><a href="#">BLOG</a></li> -->
+          <li class="nav-items"><a href="#contact">CONTACT</a></li>
+          <li class="nav-items"><a href="#socials">SOCIALS</a></li>
         </ul>
       </nav>
     </header>
@@ -56,7 +64,7 @@
               Hello there! My name is Punnakan Punsiri. I'm 21 years old. <br />Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit. Pariatur repellat voluptate <br />molestiae sapiente
               odio id sed adipisci. <br />voluptatem mollitia! Quasi aspernatur enim <br />quam libero optio quo ipsa eos. <br />Voluptatibus inventore
             </p>
-            <button id="contact" class="btn-contact">Contact Me</button>
+            <button id="submit-contact" class="btn-contact">Contact Me</button>
           </div>
         </div>
       </section>
@@ -137,24 +145,61 @@
               <img src="./assets/phaser_timers.png" alt="countdown" />
               <p>countdown timer</p>
             </div>
-            <div class="box countdown" id="countdown">
-              <h5>Countdown Timer</h5>
-              <img src="./assets/phaser_timers.png" alt="countdown" />
-              <p>countdown timer</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container contact-container">
+          <div class="contact-header">
+            <h2>Contact <span>Me</span></h2>
+            <p>Feel free to <span>get in touch</span> with Q</p>
+          </div>
+          <div class="form-container">
+            <div class="left-contact">
+              <p><span>Address - </span>31/1 M.1 Thamaka Thamaka Kanchanaburi</p>
+              <p><span>Phone - </span>(+66)632535288</p>
+              <p><span>Email - </span>punnakan2509@gmail.com</p>
+              <p><span>Website - </span>www.pnkziq.co.th</p>
             </div>
-            <div class="box countdown" id="countdown">
-              <h5>Countdown Timer</h5>
-              <img src="./assets/phaser_timers.png" alt="countdown" />
-              <p>countdown timer</p>
-            </div>
-            <div class="box countdown" id="countdown">
-              <h5>Countdown Timer</h5>
-              <img src="./assets/phaser_timers.png" alt="countdown" />
-              <p>countdown timer</p>
+            <div class="right-contact">
+              <form>
+                <input type="text" name="name" placeholder="Full Name" />
+                <input type="text" name="phone" placeholder="Phone Number" />
+                <input type="text" name="email" placeholder="Your Email" />
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
+      <footer id="socials">
+        <div class="container social-container">
+          <div class="text-footer">
+            <h2>My socials media</h2>
+          </div>
+          <div class="social-logos">
+            <ul class="social-items">
+              <li class="social-item">
+                <a href="https://www.facebook.com/ikkewtwentyfive/" target="_blank"><i class="fa-brands fa-facebook">‎ </i></a>
+              </li>
+              <li class="social-item">
+                <a href="https://www.instagram.com/pnkzi_q/" target="_blank"><i class="fa-brands fa-instagram">‎ </i></a>
+              </li>
+              <li class="social-item">
+                <a href="https://github.com/Qlerdev" target="_blank"><i class="fa-brands fa-github">‎ </i></a>
+              </li>
+              <li class="social-item">
+                <a href="https://www.linkedin.com/in/punnakan-punsiri-096b30242/" target="_blank"><i class="fa-brands fa-linkedin">‎</i> </a>
+              </li>
+              <li class="social-item">
+                <a href="https://www.youtube.com/@punnakanpunsiri1580" target="_blank"><i class="fa-brands fa-youtube">‎</i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script src="index.js"></script>
     </main>
   </body>
 </html>

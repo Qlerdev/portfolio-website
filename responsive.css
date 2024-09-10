@@ -4,18 +4,14 @@
 
 */
 
-
 /*min-width คือ ทำงานตั้งแต่ค่าที่กำหนด
 ตั้งแต่ 1025ขึ้นไป
 
 
 */
 
-
-
 /* คอมพิวเตอร์ตั้งโต๊ะ */
 @media screen and (min-width: 1281px) {
-  
 }
 /* คอมพิวเตอร์โน้ตบุ๊ก */
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -25,4 +21,15 @@
 }
 /* มือถือ */
 @media (max-width: 480px) {
+  header {
+    width: 100%;
+  }
+  .hero-section .hero-content .right-hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero-section .hero-content .right-hero {
+    width: 100%;
+    padding: 0 0.1rem;
+  }
 }

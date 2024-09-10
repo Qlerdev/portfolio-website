@@ -450,24 +450,4 @@ footer .container.social-container .social-logos .social-items a .fa-brands:hove
 }
 
 
-/*RESPONSIVE*/
 
-/* มือถือ */
-@media (max-width: 480px) {
-  
-}
-
-/* แท็บเล็ต */
-@media (min-width: 481px) and (max-width: 1024px) {
-  
-}
-
-/* คอมพิวเตอร์โน้ตบุ๊ก */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-}
-
-/* คอมพิวเตอร์ตั้งโต๊ะ */
-@media (min-width: 1281px) {
-  
-}

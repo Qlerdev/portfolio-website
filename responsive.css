@@ -21,15 +21,181 @@
 }
 /* มือถือ */
 @media (max-width: 480px) {
-  header {
-    width: 100%;
+  nav {
+    padding: 2rem 4rem;
+    text-align: center;
   }
+
+  /*BURGER BAR*/
+  #ham-menu {
+    padding: 1.2rem 3rem 0 0;
+  }
+
+  /*NAVBAR*/
+  #navbar {
+    width: 100vw;
+    height: 100%; /* ปรับให้ครอบคลุม 100% ของ Hero-section */
+    background-color: #020617;
+    position: absolute; /* ใช้ absolute เพื่อให้อยู่ภายใน Hero-section */
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  #herosection {
+    position: relative;
+    height: 100vh; /* กำหนดให้ Hero-section มีความสูงเต็มหน้าจอ */
+  }
+
+  #navbar nav .nav-items-container {
+    margin-top: 3rem;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100vw; /* ให้ครอบคลุมความกว้างทั้งหมด */
+    height: calc(100vh - 4rem); /* ปรับขนาดความสูงของเมนู ให้ครอบคลุม Hero-section */
+    background-color: #020617;
+    z-index: 10;
+    padding-left: 1.5rem;
+    /* display: none; */
+  }
+
+  #navbar nav .nav-items-container .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #020617;
+    font-size: 2rem;
+    padding: 1.6rem 3rem;
+    border-bottom: 2px solid rgb(41, 41, 41);
+  }
+
+  #navbar nav .nav-items-container .nav-items:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #020617;
+    font-size: 2rem;
+    padding: 1.6rem 3rem;
+  }
+
+  #navbar i {
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  #navbar nav .text-logo {
+    text-align: center;
+    margin: 0 auto; /* โลโก้อยู่ตรงกลาง */
+  }
+
+  #navbar #ham-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  /*HERO SECTION */
+  .hero-section .hero-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-section .hero-content .left-hero {
+    margin: 0;
+  }
+  .hero-section .hero-content .left-hero p {
+    display: none;
+  }
+  .hero-section .hero-content .left-hero h1,
+  .hero-section .hero-content .left-hero h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
   .hero-section .hero-content .right-hero img {
-    max-width: 100%;
-    height: auto;
+    width: 20rem;
+    height: 20rem;
   }
-  .hero-section .hero-content .right-hero {
+  /*ABOUT ME SECTION*/
+
+  .aboutme .container.aboutme-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutme-container .aboutme-img {
+  }
+
+  .aboutme .container.aboutme-container .aboutme-desc {
+    padding: 0;
+  }
+
+  .aboutme .container.aboutme-container .aboutme-desc h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .aboutme .container.aboutme-container img,
+  .aboutme-container .aboutme-img .image-wrapper::before,
+  .aboutme .container.aboutme-container .btn-contact {
+    display: none;
+  }
+
+  .aboutme .container.aboutme-container {
+    margin-top: -35rem;
+  }
+
+  /*SERVICES SECTION*/
+  .myservice {
+    padding: 70rem 0 70rem;
+    text-align: center;
+  }
+  .myservice .container.myservice-container .myservices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto);
+  }
+  .myservice .container.myservice-container .myservices .card {
+    padding: 6rem 0.3rem;
+    margin: 2rem 8rem;
+  }
+
+  /*PROJECT SECTION*/
+  .portfolio .container.portfolio-container .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /*CONTACT SECTION */
+  .contact {
+    padding: 5rem 0 80rem;
+    text-align: start;
+  }
+
+  .contact .container.contact-container .contact-header h2 {
+    font-size: 2.7rem;
+  }
+  .contact .container.contact-container .contact-header p {
+    font-size: 1.5rem;
+  }
+  .contact .container.contact-container .left-contact {
+    margin-bottom: 1.3rem;
+  }
+  .contact .container.contact-container .left-contact p {
+    font-size: 1.5rem;
+  }
+  .contact .container.contact-container .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    padding: 0 0.1rem;
+  }
+
+  .contact .container.contact-container .form-container input {
+    padding: 2rem 1rem;
   }
 }

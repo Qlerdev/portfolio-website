@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  min-height: 200vh;
+  min-height: 100vh;
 }
 .container {
   max-width: 120rem;
@@ -24,8 +24,8 @@ body {
 }
 
 header {
-  position: -webkit-sticky; /* สำหรับ Safari */
-  position: sticky;
+  /* position: -webkit-sticky; 
+  position: sticky; */
   top: 0;
   z-index: 999;
 }
@@ -62,7 +62,7 @@ nav .nav-items-container .nav-items a {
   color: #9ca3af;
   position: relative;
   text-decoration: none;
-  padding: 5px;
+  padding: 0.5rem;
   transition: color 0.3s, background-color 0.3s;
 }
 
@@ -80,6 +80,7 @@ nav .nav-items-container .nav-items a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .hero-content {
@@ -349,7 +350,6 @@ nav .nav-items-container .nav-items a:hover {
   color: #ffffff;
   padding-top: 0.8rem;
 }
-
 .container.contact-container .form-container {
   display: flex;
   align-items: center;

@@ -447,3 +447,9 @@ footer .container.social-container .social-logos .social-items a .fa-brands {
 footer .container.social-container .social-logos .social-items a .fa-brands:hover {
   color: #d4a308;
 }
+
+/*display none*/
+
+.nav-items-container.none {
+  display: none;
+}
